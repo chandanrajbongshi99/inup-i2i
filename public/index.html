@@ -1,0 +1,466 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Inup-i2i</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="customs.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style=" background-color: rgb(241, 241, 241);" >
+
+
+  
+<nav class="h-24 w-full bg-white  	invisible md:visible flex items-center  p-10">
+
+ <h3><img src="images/logo1.svg" alt=""></h3>
+
+ <div class=" flex mx-auto font-semibold nav-links  gap-4 md:text-base text-xs  md:gap-10 justify-around">
+    
+<a href=""><h1>Home</h1> </a>
+<a href=""><h1>INUP-i2i</h1> </a>
+<a href=""><h1>Events</h1> </a>
+<a href=""><h1>Industry</h1> </a>
+<a href=""><h1>Research and Development</h1> </a>
+<a href=""><h1>Users</h1> </a>
+</div>
+
+
+<div class="justify-end"><img src="images/logo2.png" alt=""></div>
+
+</nav>
+
+<!-- carousel sec -->
+<div class="carousel relative rounded relative overflow-hidden ">
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <!--Slide 1-->
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+        checked="checked">
+      <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url(images/car1.png); background-repeat: no-repeat; background-size: cover;">
+      
+      </div>
+      <label for="carousel-3"
+        class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center"><i
+          class="fas fa-angle-left mt-3"></i></label>
+      <label for="carousel-2"
+        class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i
+          class="fas fa-angle-right mt-3"></i></label>
+  
+      <!--Slide 2-->
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url(https://mdbootstrap.com/img/new/slides/043.jpg)">
+      </div>
+      <label for="carousel-1"
+        class=" control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i
+          class="fas fa-angle-left mt-3"></i></label>
+      <label for="carousel-3"
+        class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i
+          class="fas fa-angle-right mt-3"></i></label>
+  
+      <!--Slide 3-->
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0" style="height:500px; background-image: url(https://mdbootstrap.com/img/new/slides/054.jpg)">
+      </div>
+      <label for="carousel-2"
+        class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i
+          class="fas fa-angle-left mt-3"></i></label>
+      <label for="carousel-1"
+        class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i
+          class="fas fa-angle-right mt-3"></i></label>
+  
+      <!-- Add additional indicators for each slide-->
+      <ol class="carousel-indicators">
+        <li class="inline-block mr-3">
+          <label for="carousel-1"
+            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+        <li class="inline-block mr-3">
+          <label for="carousel-2"
+            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+        <li class="inline-block mr-3">
+          <label for="carousel-3"
+            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+      </ol>
+  
+    </div>
+  </div>
+ 
+
+    </div>
+    
+<!-- end carousel -->
+
+<div style="background-color: #FF9933;" class="h-24 w-100  md:flex justify-center items-center gap-10  ">
+
+    <button style="color: #FF9933;"
+    class="bg-white  text-black mx-10 align-center flex-grow flex gap-4  font-bold uppercase text-sm px-6 py-3 rounded shadow  outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    type="button">
+    <i class="fas fa-highlighter animate-bounce"></i> Highlights
+  </button>
+<div id="highlights">
+
+    <p style="color: white;" class="font-semibold text-base color-white"></p>
+
+
+</div>
+
+
+</div>
+<!-- tabs -->
+<div class=" md:mt-4 m-10 grid md:grid-cols-2 gap-4  sm:mt-3 mt-4  ">
+
+<div class="">
+<ul class="tabs inline-flex w-full px-1 pt-2" 
+      data-content="tab-content">
+	    <li class="px-4 py-2 -mb-px transition duration-500 ease-in-out font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50">
+		    <a class="default-tab" href="#ex1-tab1"> <i class="fa fa-bullhorn mic " aria-hidden="false"></i> Announcement</a>
+	    </li>
+ 	    <li class="px-4 py-2 -mb-px   transition duration-500 ease-in-out  font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50">
+		    <a href="#ex1-tab2"> <i class="fas mic  fa-undo-alt"></i> Ongoing</a>
+	    </li>
+	</ul>
+
+
+<div class="tabs-contents py-4" id="tab-content">
+      <div id="ex1-tab1" >
+        <div class="min-h-screen w-full">
+          <div class="p-6 bg-white flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+            <div>
+              <div class="bg-purple-700 font-bold h-16 w-16 rounded text-center text-white p-1"> 23 <br> March</div>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-700 mb-2">Job Security</h1>
+              <p class="text-gray-600 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cupiditate ut laboriosam!</p>
+            </div>
+          </div>
+<!--  -->
+          <div class="p-6 bg-white mt-3 flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+            <div>
+              <div class="bg-purple-700 font-bold h-16 w-16 rounded text-center text-white p-1"> 23 <br> March</div>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-700 mb-2">Job Security</h1>
+              <p class="text-gray-600 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cupiditate ut laboriosam!</p>
+            </div>
+          </div>
+<!--  -->
+          <div class="p-6 bg-white mt-3 flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+            <div>
+              <div class="bg-purple-700 font-bold h-16 w-16 rounded text-center text-white p-1"> 23 <br> March</div>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-700 mb-2">Job Security</h1>
+              <p class="text-gray-600 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cupiditate ut laboriosam!</p>
+            </div>
+          </div>
+
+
+          <button class="p-2 w-1/3   pl-5 pr-5 bg-transparent border-2 mt-3 border-purple-500 text-indigo-500 text-lg rounded-lg transition-colors duration-700 transform hover:bg-indigo-500 hover:text-gray-100 focus:border-4 focus:border-purple-300">View All</button>
+
+        </div>
+
+       </div>
+      <div id="ex1-tab2" >
+        <div class="min-h-screen w-full">
+          <div class="p-6 bg-white flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+            <div>
+             
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-700 mb-2">Job Security</h1>
+              <p class="text-gray-600 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cupiditate ut laboriosam!</p>
+            </div>
+          </div>
+<!--  -->
+          <div class="p-6 bg-white mt-3 flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+            <div>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-700 mb-2">Job Security</h1>
+              <p class="text-gray-600 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cupiditate ut laboriosam!</p>
+            </div>
+          </div>
+<!--  -->
+          <div class="p-6 bg-white mt-3 flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+            <div>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-700 mb-2">Job Security</h1>
+              <p class="text-gray-600 w-full text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta cupiditate ut laboriosam!</p>
+            </div>
+          </div>
+
+          <button class="p-2 w-1/3  pl-5 pr-5 bg-transparent border-2 mt-3 border-purple-500 text-indigo-500 text-lg rounded-lg transition-colors duration-700 transform hover:bg-indigo-500 hover:text-gray-100 focus:border-4 focus:border-purple-300">View All</button>
+
+        </div>
+
+      </div>
+      
+      </div>
+   
+</div>
+<div class="youtube-embed">
+
+  <iframe width="400" height="500" src="https://www.youtube.com/embed/ZtWFUm2oRIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+</div>  
+
+<div class="  md:flex flex justify-center w-full h-auto p-4  mx-auto gap-4 md:gap-10 md:w-8/12 rounded-lg bg-white shadow ">
+
+  <div class="sm:flex-col icons cursor-pointer"><img class="md:h-24  h-10" src="images/IIT_Kharagpur_Logo 1.png" alt="">
+  <p class="font-bold text-center ">IIT Kharagpur</p>
+   </div>
+   <div class="flex-col icons cursor-pointer "><img class="md:h-24  h-10" src="images/iit-Madras-logo 1.png" alt="">
+    <p class="font-bold text-center ">IIT Madras</p>
+     </div>
+     <div class="flex-col  icons cursor-pointer"><img class="md:h-24 h-10 " src="images/unnamed 1.png" alt="">
+      <p class="font-bold text-center ">IISC Bangalore</p>
+       </div>
+       <div class="flex-col   icons cursor-pointer"><img class="md:h-24  h-10" src="images/Indian_Institute_of_Technology_Delhi_Logo 1.png" alt="">
+        <p class="font-bold text-center ">IIT Delhi</p>
+         </div>
+         <div class="flex-col  icons cursor-pointer"><img class="md:h-24 h-10 " src="images/logo 1.png" alt="">
+          <p class="font-bold text-center ">IIT Bombay</p>
+           </div>
+           <div class="flex-col  icons cursor-pointer"><img class="md:h-24  h-10" src="images/IITG_logo 1.png" alt="">
+            <p class="font-bold text-center ">IIT Guwahati</p>
+             </div>
+      
+    
+  
+
+
+
+</div>
+
+
+<!-- about the program -->
+
+<div class="flex-col justify-center h-auto mt-10 w-auto bg-blue-700 program">
+
+<h1 class="text-center text-4xl p-5 font-bold text-white">ABOUT THE PROGRAMME</h1>
+
+<p class="mt-3 p-10 text-white text-center">
+
+  Indian Nanoelectronics Users Programme - Idea to Innovation (INUP-i2i), proposes to take the ‘open national nanocenters’ concept to the next stage, while retaining the key aspects of training at different levels introduced in INUP. INUP had predominantly provided easy access to state-of-the-art nano fabrication and characterization facilities to researchers across the country, and has thereby created for the first time a critical mass of hands-on experimental researchers across the country in this area. It is now time for the broadest leveraging of the facilities and technical expertise at all six institutes to enable their journey towards translation and incubation.
+
+This will be facilitated, inter alia, by a centralized portal for INUP-i2i which will channel interested users to the appropriate nano-center and its individual portal based on their preference/s and publicizing through various print & social media about all activities under the programme. Database of Users (i.e. Position held in Academia/Industry/R&D Organization) after INUP training will also be maintained for future references and value addition. The coordination of technical, logistical, and informational activities will be carried out through a centralized Project Management Unit (PMU) to be created by IIT Guwahati.
+</p>
+</div>
+
+<h1 class="text-center text-4xl p-5 font-bold text-black">Programme Highlights</h1>
+<div class="grid md:grid-cols-4 grid-cols-1 ml-28 mt-10 mb-10 gap-3 ">
+
+<div class="rounded-lg">
+  <div class="bg-gray-100 rounded-lg w-64 shadow">
+      <img src="https://unsplash.it/640/425" alt=""
+          class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
+      <button
+          class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
+          Manpower</button>
+  </div>
+</div>
+
+<div class="rounded-lg">
+  <div class="bg-gray-100 rounded-lg w-64 shadow">
+      <img src="https://unsplash.it/640/425" alt=""
+          class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
+      <button
+          class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
+          Projects</button>
+  </div>
+</div>
+
+<div class="rounded-lg">
+  <div class="bg-gray-100 rounded-lg w-64 shadow">
+      <img src="https://unsplash.it/640/425" alt=""
+          class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
+      <button
+          class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
+          Workshops</button>
+  </div>
+</div>
+
+<div class="rounded-lg">
+  <div class="bg-gray-100 rounded-lg w-64 shadow">
+      <img src="https://unsplash.it/640/425" alt=""
+          class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
+      <button
+          class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
+          Outcomes</button>
+  </div>
+</div>
+
+</div>
+<!-- footer -->
+
+<footer class="relative bg-white mt-10 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+         
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white icons text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab  fa-twitter"></i></button><button class="bg-white icons text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white icons text-black-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <i class="fab fa-linkedin-in"></i></button><button class="bg-white icons text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About INUP-i2i</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Eventss</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Industry</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Research and Development</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">MIT License</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2021</span><a href="" class="text-blueGray-500 hover:text-gray-800" target="_blank"> INUP-i2i
+          <a href="" class="text-blueGray-500 hover:text-blueGray-800">2021</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+var puns = [
+  "Returning to Follow Your Heart",
+  "Eat Your Heart Out",
+  "Cardiac Arrest",
+  "You Can't Heart-ly Wait",
+  "Pumped For the Return",
+  "Party Heart-y",
+  "This Conference Can't Be Beat",
+  "You're So Vein, You Probably Think This Conference Is About You",
+  "Putting Hearts On Our Sleeves",
+  "Absence Makes This Conference Grow Fonder",
+  "Total Eclipse of the Heart",
+  "I can see clearly now the reign is gone",
+  "Your heart looks good to me",
+  "Heart, if acts"
+];
+
+for (i = 0; i < puns.length; i++) {
+  $("#highlights p").append(
+    "<span class='date text-lg'>2/2/2020:</span>" +
+    "<span class='story text-base'>" + puns[i] + "</span>"
+  );
+}
+// tabs
+;(function() {
+  let tabs = document.querySelectorAll(".tabs");
+
+
+  tabs.forEach(function(tab) {
+      let tabTogglers = tab.querySelectorAll("a");
+
+      tabTogglers.forEach(function(toggler) {
+          toggler.addEventListener("click", function(e) {
+              e.preventDefault();
+
+              let tabName = this.getAttribute("href");
+
+              let tabContents = document.querySelector("#" + tab.getAttribute("data-content"));
+
+              for (let i = 0; i < tabContents.children.length; i++) {
+
+                  tabTogglers[i].parentElement.classList.remove("border-blue-400", "border-b", "-mb-px", "opacity-100");
+                  tabContents.children[i].classList.remove("hidden");
+                  if ("#" + tabContents.children[i].id === tabName) {
+                      continue;
+                  }
+                  tabContents.children[i].classList.add("hidden");
+
+              }
+              e.target.parentElement.classList.add("border-blue-400", "border-b-4", "-mb-px", "opacity-100");
+          });
+      });
+
+      tab.querySelectorAll(".default-tab")[0].click();
+  });
+})()
+
+$(".icons").hover(function () {
+    $(this).toggleClass("animate__animated animate__headShake ");
+    $(this).toggleClass("transition duration-500 ease-in-out ");
+ }
+ 
+ 
+ 
+ );
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+</html>
