@@ -11,8 +11,6 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <!-- chart -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
     <!--  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,7 +20,11 @@
 <body style=" background-color: rgb(241, 241, 241);" >
 
 
-  
+  <div id="preloaderbody" class="preloader-body">
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+  </div>
 <!-- <nav class="h-24 w-full bg-white   flex items-center  p-10">
 
  <img class="h-10" src="images/logo1.svg" alt="">
@@ -49,7 +51,7 @@
 <div class="flex flex-wrap place-items-center">
   <section class="relative mx-auto">
       <!-- navbar -->
-    <nav class="flex justify-between bg-white-900 text-black w-screen">
+    <nav class="flex justify-between bg-white drop-shadow-md text-black w-screen">
       <div class="px-5 xl:px-12 py-6 flex w-full items-center">
         <div class="text-3xl font-bold font-heading" href="#">
           <!-- <img class="h-9" src="logo.png" alt="logo"> -->
@@ -96,7 +98,7 @@
         </div>
         </div>
      </nav>
-    
+   
   </section>
 </div>
 <!--  -->
@@ -113,6 +115,7 @@
 <li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">User</a></li>
 </ul>
 </div>
+
 <!-- carousel sec -->
 <div class="carousel relative rounded relative overflow-hidden ">
     <div class="carousel-inner h-1/2 relative overflow-hidden w-full">
@@ -131,7 +134,7 @@
   
       <!--Slide 2-->
       <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url(https://mdbootstrap.com/img/new/slides/043.jpg)">
+      <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url(images/car2.jpg)">
       </div>
       <label for="carousel-1"
         class=" control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i
@@ -142,7 +145,7 @@
   
       <!--Slide 3-->
       <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item absolute opacity-0" style="height:500px; background-image: url(https://mdbootstrap.com/img/new/slides/054.jpg)">
+      <div class="carousel-item absolute opacity-0" style="height:500px; background-image: url(images/car3.jpg)">
       </div>
       <label for="carousel-2"
         class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i
@@ -243,7 +246,7 @@
           </div>
 
 
-          <button class="p-2 w-1/3   pl-5 pr-5 bg-transparent border-2 mt-3 border-purple-500 text-indigo-500 text-lg rounded-lg transition-colors duration-700 transform hover:bg-indigo-500 hover:text-gray-100 focus:border-4 focus:border-purple-300">View All</button>
+          <button class="p-2 w-1/3   pl-5 pr-5 bg-transparent border-2 mt-3 border-purple-500 text-indigo-500 text-xs md:text-lg rounded-lg transition-colors duration-700 transform hover:bg-indigo-500 hover:text-gray-100 focus:border-4 focus:border-purple-300">View All</button>
 
         </div>
 
@@ -298,24 +301,24 @@
 </div>
 </div>  
 
-<div class="  md:flex flex-wrap flex-row-reverse justify-center w-full h-auto p-4  mx-auto gap-4 md:gap-10 md:w-8/12 rounded-lg bg-white shadow ">
+<div class="  md:flex grid grid-cols-3  justify-center w-full m-4 text-sm  h-auto p-4  mx-auto gap-4 md:gap-10 md:w-8/12 rounded-lg bg-white shadow ">
 
-  <div class="sm:flex-col icons cursor-pointer"><img class="md:h-24  h-10" src="images/IIT_Kharagpur_Logo 1.png" alt="">
-  <p class="font-bold text-center ">IIT Kharagpur</p>
+  <div class=" icons  cursor-pointer"><img class="md:h-24  " src="images/IIT_Kharagpur_Logo 1.png" alt="">
+  <p class="font-bold  text-center">IIT Kharagpur</p>
    </div>
-   <div class="flex-col icons cursor-pointer "><img class="md:h-24  h-10" src="images/iit-Madras-logo 1.png" alt="">
+   <div class="flex-col icons cursor-pointer "><img class="md:h-24  " src="images/iit-Madras-logo 1.png" alt="">
     <p class="font-bold text-center ">IIT Madras</p>
      </div>
-     <div class="flex-col  icons cursor-pointer"><img class="md:h-24 h-10 " src="images/unnamed 1.png" alt="">
+     <div class="flex-col  icons cursor-pointer"><img class="md:h-24  " src="images/unnamed 1.png" alt="">
       <p class="font-bold text-center ">IISC Bangalore</p>
        </div>
-       <div class="flex-col   icons cursor-pointer"><img class="md:h-24  h-10" src="images/Indian_Institute_of_Technology_Delhi_Logo 1.png" alt="">
+       <div class="flex-col   icons cursor-pointer"><img class="md:h-24  " src="images/Indian_Institute_of_Technology_Delhi_Logo 1.png" alt="">
         <p class="font-bold text-center ">IIT Delhi</p>
          </div>
-         <div class="flex-col  icons cursor-pointer"><img class="md:h-24 h-10 " src="images/logo 1.png" alt="">
+         <div class="flex-col  icons cursor-pointer"><img class="md:h-24  " src="images/logo 1.png" alt="">
           <p class="font-bold text-center ">IIT Bombay</p>
            </div>
-           <div class="flex-col  icons cursor-pointer"><img class="md:h-24  h-10" src="images/IITG_logo 1.png" alt="">
+           <div class="flex-col  icons cursor-pointer"><img class="md:h-24  " src="images/IITG_logo 1.png" alt="">
             <p class="font-bold text-center ">IIT Guwahati</p>
              </div>
       
@@ -331,9 +334,9 @@
 
 <div class="flex-col justify-center h-auto mt-10 w-auto bg-blue-700 program">
 
-<h1 class="text-center text-4xl p-5 font-bold text-white">ABOUT THE PROGRAMME</h1>
+<h1 class="text-center md:text-4xl text-base md:p-5 p-2 font-bold text-white">ABOUT THE PROGRAMME</h1>
 
-<p class="mt-3 p-10 text-white text-center">
+<p class="md:mt-3 md:p-10 p-4 text-white mt-0  md:text-xl text-xs text-center">
 
   Indian Nanoelectronics Users Programme - Idea to Innovation (INUP-i2i), proposes to take the ‘open national nanocenters’ concept to the next stage, while retaining the key aspects of training at different levels introduced in INUP. INUP had predominantly provided easy access to state-of-the-art nano fabrication and characterization facilities to researchers across the country, and has thereby created for the first time a critical mass of hands-on experimental researchers across the country in this area. It is now time for the broadest leveraging of the facilities and technical expertise at all six institutes to enable their journey towards translation and incubation.
 
@@ -342,11 +345,11 @@ This will be facilitated, inter alia, by a centralized portal for INUP-i2i which
 </div>
 
 <h1 class="text-center text-4xl p-5 font-bold text-black">Programme Highlights</h1>
-<div class="grid md:grid-cols-4 grid-cols-1 ml-28 mt-10 mb-10 gap-3 ">
+<div class="grid md:grid-cols-4 grid-cols-1  place-items-center mt-10 mb-10  ">
 
 <div class="rounded-lg">
   <div class="bg-gray-100 rounded-lg w-64 shadow">
-      <img src="https://unsplash.it/640/425" alt=""
+      <img src="https://www.w3schools.com/python/img_matplotlib_pie1.png" alt=""
           class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
       <button
           class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
@@ -356,7 +359,7 @@ This will be facilitated, inter alia, by a centralized portal for INUP-i2i which
 
 <div class="rounded-lg">
   <div class="bg-gray-100 rounded-lg w-64 shadow">
-      <img src="https://unsplash.it/640/425" alt=""
+      <img src="https://www.w3schools.com/python/img_matplotlib_pie1.png" alt=""
           class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
       <button
           class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
@@ -366,7 +369,7 @@ This will be facilitated, inter alia, by a centralized portal for INUP-i2i which
 
 <div class="rounded-lg">
   <div class="bg-gray-100 rounded-lg w-64 shadow">
-      <img src="https://unsplash.it/640/425" alt=""
+      <img src="https://www.w3schools.com/python/img_matplotlib_pie1.png" alt=""
           class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
       <button
           class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
@@ -376,7 +379,7 @@ This will be facilitated, inter alia, by a centralized portal for INUP-i2i which
 
 <div class="rounded-lg">
   <div class="bg-gray-100 rounded-lg w-64 shadow">
-      <img src="https://unsplash.it/640/425" alt=""
+      <img src="https://www.w3schools.com/python/img_matplotlib_pie1.png" alt=""
           class="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"/>
       <button
           class="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-purple-600 rounded-b-lg hover:bg-purple-700">
@@ -406,37 +409,56 @@ This will be facilitated, inter alia, by a centralized portal for INUP-i2i which
       </div>
       <div class="w-full lg:w-6/12 px-4">
         <div class="flex flex-wrap items-top mb-6">
+
+
+          <div class="w-full lg:w-4/12 px-4"> 
+          
+          <div class="flex-col">
+            <img class="md:h-16 h-10" src="images/logo1.svg" alt="">
+            <img class="md:h-16 h-10" src="images/logo2.png" alt="">
+          </div>
+          
+          </div>
+
           <div class="w-full lg:w-4/12 px-4 ml-auto">
             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About INUP-i2i</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About INUP-i2i</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Eventss</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Events</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Industry</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">Industry</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Research and Development</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">Research and Development</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">Users</a>
               </li>
             </ul>
           </div>
+
+
+
+
+
           <div class="w-full lg:w-4/12 px-4">
             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">MIT License</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">MIT License</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">Terms &amp; Conditions</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Privacy Policy</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">Privacy Policy</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Contact Us</a>
+                <a class="text-blueGray-600 hover:text-purple-800 font-normal block pb-2 text-sm" href="">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -528,7 +550,14 @@ $(".icons").hover(function () {
 
 				btn.addEventListener("click", () => {
 					menu.classList.toggle("hidden");
-				});
+			
+        });
+
+
+
+setTimeout(function () {
+$('#preloaderbody').fadeOut();// or fade, css //display however you'd like.
+}, 2500);
 </script>
 
 
