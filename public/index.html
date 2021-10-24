@@ -23,11 +23,11 @@
 
 
   
-<nav class="h-24 w-full bg-white  	invisible md:visible flex items-center  p-10">
+<!-- <nav class="h-24 w-full bg-white   flex items-center  p-10">
 
- <h3><img src="images/logo1.svg" alt=""></h3>
+ <img class="h-10" src="images/logo1.svg" alt="">
 
- <div class=" flex mx-auto font-semibold nav-links  gap-4 md:text-base text-xs  md:gap-10 justify-around">
+ <div class=" flex mx-auto font-semibold nav-links md:visible invisible  gap-4 md:text-base text-xs  md:gap-10 justify-around">
     
 <a href=""><h1>Home</h1> </a>
 <a href=""><h1>INUP-i2i</h1> </a>
@@ -38,13 +38,84 @@
 </div>
 
 
-<div class="justify-end"><img src="images/logo2.png" alt=""></div>
+<div class="justify-end md:visible invisible"><img src="images/logo2.png" alt=""></div>
+<div class="   md:invisible visible"><i class="fas fa-bars"></i></div>
 
-</nav>
+</nav> -->
 
+
+<!-- follow me on twitter @asad_codes -->
+
+<div class="flex flex-wrap place-items-center">
+  <section class="relative mx-auto">
+      <!-- navbar -->
+    <nav class="flex justify-between bg-white-900 text-black w-screen">
+      <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+        <div class="text-3xl font-bold font-heading" href="#">
+          <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+          <img class="md:h-16 h-10" src="images/logo1.svg" alt="">
+        </div>
+        <!-- Nav Links -->
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+          <li><a class="hover:text-gray-400" href="#">Home</a></li>
+          <li><a class="hover:text-gray-400" href="#">INUP-i2i</a></li>
+          <li><a class="hover:text-gray-400" href="#">Events</a></li>
+          <li><a class="hover:text-gray-400" href="#">Industry</a></li>
+          <li><a class="hover:text-gray-400" href="#">Research and Development</a></li>
+          <li><a class="hover:text-gray-400" href="#">Users</a></li>
+        </ul>
+        <!-- Header Icons -->
+        <div class="hidden xl:flex items-center space-x-5 items-center">
+         
+          <div class="flex items-center hover:text-gray-200" href="#">
+           <img class="md:h-16 h-10" src="images/logo2.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+      <!-- Responsive navbar -->
+      <div class="xl:hidden flex mr-6 items-center" href="#">
+        <img class="md:h-16 h-10" src="images/logo2.png" alt="">
+       
+      </div>
+      <div class="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-gray-500 hover:text-purple-500 "
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        </div>
+        </div>
+     </nav>
+    
+  </section>
+</div>
+<!--  -->
+
+
+<!-- mobile menu -->
+<div class="hidden mobile-menu ">
+<ul class="">
+<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold">Home</a></li>
+<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">About Inup-i2i</a></li>
+<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Events</a></li>
+<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Industry</a></li>
+<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Research and Development</a></li>
+<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">User</a></li>
+</ul>
+</div>
 <!-- carousel sec -->
 <div class="carousel relative rounded relative overflow-hidden ">
-    <div class="carousel-inner relative overflow-hidden w-full">
+    <div class="carousel-inner h-1/2 relative overflow-hidden w-full">
       <!--Slide 1-->
       <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
         checked="checked">
@@ -227,7 +298,7 @@
 </div>
 </div>  
 
-<div class="  md:flex flex justify-center w-full h-auto p-4  mx-auto gap-4 md:gap-10 md:w-8/12 rounded-lg bg-white shadow ">
+<div class="  md:flex flex-wrap flex-row-reverse justify-center w-full h-auto p-4  mx-auto gap-4 md:gap-10 md:w-8/12 rounded-lg bg-white shadow ">
 
   <div class="sm:flex-col icons cursor-pointer"><img class="md:h-24  h-10" src="images/IIT_Kharagpur_Logo 1.png" alt="">
   <p class="font-bold text-center ">IIT Kharagpur</p>
@@ -452,7 +523,12 @@ $(".icons").hover(function () {
  
  );
 
+ const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
 
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
 </script>
 
 
