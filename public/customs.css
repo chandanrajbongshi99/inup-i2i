@@ -56,7 +56,7 @@ nav a:hover:after {
 .date {
   margin-right: 10px;
   text-decoration: underline;
-  color: #5603ad;
+  color: #fcef7a;
 }
 .story {
   margin-right: 20px;
@@ -72,7 +72,6 @@ nav a:hover:after {
 .youtube-embed iframe {
   width: 100%;
   height:100%;
-  position: relative;
   overflow: hidden;
 }
 
@@ -134,7 +133,8 @@ body,html {
   width: 100%;
   height: 100%;
   z-index: 99999999;
-  background: white;
+  background-color:white;
+  background-image: url("images/amCharts.pixelMap.svg");
   top: 0;
 }
 
@@ -336,3 +336,5 @@ body,html {
       -13px -20px 0 2px #ff9967;
   }
 }
+
+/* map */
