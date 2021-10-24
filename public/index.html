@@ -49,10 +49,11 @@
 
 <!-- follow me on twitter @asad_codes -->
 
-<div class="flex flex-wrap place-items-center">
+<div class="flex flex-wrap place-items-center fixed z-20 shadow-lg top-0">
   <section class="relative mx-auto">
+    
       <!-- navbar -->
-    <nav class="flex justify-between bg-white drop-shadow-md text-black w-screen">
+    <nav class="flex  bg-opacity-90  justify-between bg-white drop-shadow-md text-black w-screen">
       <div class="px-5 xl:px-12 py-6 flex w-full items-center">
         <div class="text-3xl font-bold font-heading" href="#">
           <!-- <img class="h-9" src="logo.png" alt="logo"> -->
@@ -76,9 +77,10 @@
           
         </div>
       </div>
+      
       <!-- Responsive navbar -->
       <div class="xl:hidden flex mr-6 items-center" href="#">
-        <img class="md:h-16 h-10" src="images/logo2.png" alt="">
+        <img class="md:h-16 " src="images/logo2.png" alt="">
        
       </div>
       <div class="navbar-burger self-center mr-12 xl:hidden" href="#">
@@ -106,20 +108,20 @@
 
 
 <!-- mobile menu -->
-<div class="hidden mobile-menu ">
-<ul class="">
-<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold">Home</a></li>
-<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">About Inup-i2i</a></li>
-<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Events</a></li>
-<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Industry</a></li>
-<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Research and Development</a></li>
-<li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">User</a></li>
-</ul>
-</div>
-
+<div class="hidden mt-20 mobile-menu fixed w-full z-20 ">
+  <ul class="bg-white">
+  <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold">Home</a></li>
+  <li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">About Inup-i2i</a></li>
+  <li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Events</a></li>
+  <li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Industry</a></li>
+  <li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Research and Development</a></li>
+  <li><a href="" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">User</a></li>
+  </ul>
+  </div>
+  
 <!-- carousel sec -->
-<div class="carousel relative rounded relative overflow-hidden ">
-    <div class="carousel-inner h-1/2 relative overflow-hidden w-full">
+<div class="carousel relative rounded relative md:mt-28 mt-16 overflow-hidden ">
+    <div class="carousel-inner h-3/5 relative overflow-hidden w-full">
       <!--Slide 1-->
       <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
         checked="checked">
@@ -355,7 +357,7 @@ This will be facilitated, inter alia, by a centralized portal for INUP-i2i which
 </div>
 
 <h1 class="text-center md:text-4xl text-2xl mt-6 p-5 font-bold text-black">Programme Highlights</h1>
-<div class="grid md:grid-cols-4 grid-cols-1  place-items-center mt-6  mb-10  ">
+<div class="grid sm:grid-cols-4  grid-cols-1   place-items-center mt-6  mb-10  ">
 
 <div class="rounded-lg ">
   <div class="bg-gray-100 rounded-lg w-64 ">
@@ -567,7 +569,7 @@ $(".icons").hover(function () {
 
 setTimeout(function () {
 $('#preloaderbody').fadeOut();// or fade, css //display however you'd like.
-}, 100);
+}, 1800);
 </script>
 
 
