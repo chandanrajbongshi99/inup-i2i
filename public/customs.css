@@ -70,6 +70,14 @@ nav a:hover:after {
   height:100%;
   overflow: hidden;
 }
+.mapImg{
+  background-image: url("images/Asset\ 1icon.svg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
 
 .program{
   background-image: url("images/Rectangle\ 43.png");
