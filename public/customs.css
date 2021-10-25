@@ -72,9 +72,10 @@ nav a:hover:after {
 }
 .mapImg{
   background-image: url("images/Asset\ 1icon.svg");
-  height: 400px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 20px;
   
 
 }
@@ -89,7 +90,7 @@ nav a:hover:after {
   left:44%;
   top: 23%; */
 
-}
+
 
 .program{
   background-image: url("images/Rectangle\ 43.png");
